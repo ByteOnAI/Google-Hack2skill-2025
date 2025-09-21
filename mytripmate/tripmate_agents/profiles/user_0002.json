@@ -1,0 +1,14 @@
+{
+    "user_profile": {
+        "user_id": "user_0002",
+        "first_name": "Sonam",
+        "last_name": "Bharti",
+        "email": "sonam@example.com",
+        "phone": "+91-9000000020",
+        "country_of_residence": "India",
+        "timezone": "Asia/Kolkata",
+        "preferred_currency": "INR",
+        "languages": ["English", "Hindi"]
+    }
+    
+}
