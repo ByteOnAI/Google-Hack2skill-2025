@@ -91,11 +91,3 @@ python main.py "Plan a 5-day trip to Tokyo for someone who loves anime and techn
 ```
 
 The agent will then process the request and output a detailed itinerary.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue for bugs, feature requests, or other improvements.
-
-## 📄 License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
