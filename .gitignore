@@ -18,3 +18,4 @@
 mytripmate/.venv/
 mytripmate/.venv/lib/
 .venv
+**/.env

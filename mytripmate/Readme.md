@@ -15,7 +15,7 @@ My Trip Mate is a powerful and intelligent tool designed to help you create pers
 The core of My Trip Mate is a central agent built on **Vertex AI**. This agent acts as an orchestrator, analyzing your travel requests in natural language. Based on your query, it intelligently selects and utilizes a suite of powerful tools to gather information and build your itinerary.
 
 For example, when you ask for a trip plan, the agent might:
-1.  Use **Google Maps** to find attractions, restaurants, and hotels based on your interests.
+1.  Use **Google Search** to find attractions, restaurants, and hotels based on your interests.
 2.  Use a **Weather API** to check the forecast for your travel dates.
 3.  Structure the information into a day-by-day itinerary.
 4.  Use **Firebase** to save the generated plan to your user profile.
@@ -76,7 +76,7 @@ GOOGLE_MAPS_API_KEY="your-google-maps-api-key"
 # Weather API
 WEATHER_API_KEY="your-weather-api-key"
 
-# Firebase (as a JSON string or path to service account file)
+# Firebase (as a JSON string or path to service account file)   
 FIREBASE_SERVICE_ACCOUNT_KEY_PATH="/path/to/your/firebase-service-account.json"
 ```
 
@@ -95,7 +95,3 @@ The agent will then process the request and output a detailed itinerary.
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue for bugs, feature requests, or other improvements.
-
-## 📄 License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
