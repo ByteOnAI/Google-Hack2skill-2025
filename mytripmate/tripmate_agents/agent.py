@@ -14,11 +14,11 @@ from google.adk.tools.tool_context import ToolContext
 from tripmate_agents import prompt
 
 # from tripmate_agents.sub_agents.booking.agent import booking_agent
-# from tripmate_agents.sub_agents.in_trip.agent import in_trip_agent
+from tripmate_agents.sub_agents.in_trip.agent import in_trip_agent
 # from tripmate_agents.sub_agents.inspiration.agent import inspiration_agent
 # from tripmate_agents.sub_agents.planning.agent import planning_agent
-# from tripmate_agents.sub_agents.post_trip.agent import post_trip_agent
-# from tripmate_agents.sub_agents.pre_trip.agent import pre_trip_agent
+from tripmate_agents.sub_agents.post_trip.agent import post_trip_agent
+from tripmate_agents.sub_agents.pre_trip.agent import pre_trip_agent
 from .sub_agents.brainstormer_agent.agent import travel_brainstormer
 from .sub_agents.itinerary_agent.agent import itinerary_planner
 
@@ -37,7 +37,13 @@ my_trip_mate_agent = Agent(
     description="Start a user on a Trip Planning.",
     instruction=prompt.my_trip_mate_agent_prompt,
     generate_content_config=types.GenerateContentConfig(temperature=0.2,),
-    sub_agents=[travel_brainstormer, itinerary_planner],
+    sub_agents=[
+        travel_brainstormer,
+        itinerary_planner,
+        pre_trip_agent,
+        in_trip_agent,
+        post_trip_agent,
+    ],
     before_agent_callback=load_user,
     # after_agent_callback=save_to_file,
 )
