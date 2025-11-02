@@ -4,3 +4,7 @@ google-genai
 toolbox-core
 mcp
 pydantic
+fastapi
+uvicorn[standard]
+python-dotenv
+python-multipart
